@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<configuration>
+	<configSections>
+		<section name="RewriterConfig" type="URLRewriter.Config.RewriterConfigSerializerSectionHandler, URLRewriter"/>
+	</configSections>
+	<RewriterConfig>
+		<Rules>
+			<RewriterRule>
+				<LookFor>~/A_(\d*).html</LookFor>
+				<SendTo>~/Article.aspx?b_id=$1</SendTo>
+			</RewriterRule>
+			<RewriterRule>
+				<LookFor>~/index.html</LookFor>
+				<SendTo>~/index.aspx</SendTo>
+			</RewriterRule>
+		</Rules>
+	</RewriterConfig>
+	<appSettings/>
+	<system.web>
+		<compilation debug="true">
+      
+			<assemblies>
+				<add assembly="System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/></assemblies></compilation>
+		<authentication mode="Windows"/>
+		<httpModules>
+			<add type="URLRewriter.ModuleRewriter, URLRewriter" name="ModuleRewriter"/>
+		</httpModules>
+		<httpHandlers>
+			<add verb="*" path="*.aspx" type="URLRewriter.RewriterFactoryHandler, URLRewriter"/>
+			<add verb="*" path="*.html" type="URLRewriter.RewriterFactoryHandler, URLRewriter"/>
+		</httpHandlers>
+  
+	</system.web>
+</configuration>

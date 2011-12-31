@@ -1,0 +1,137 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Register Src="users/userlogin.ascx" TagName="userlogin" TagPrefix="uc7" %>
+<%@ Register Src="Inc/userlogin.ascx" TagName="userlogin" TagPrefix="uc6" %>
+<%@ Register Src="Inc/paihangbang.ascx" TagName="paihangbang" TagPrefix="uc5" %>
+<%@ Register Src="Inc/search.ascx" TagName="search" TagPrefix="uc4" %>
+<%@ Register Src="Inc/bottom.ascx" TagName="bottom" TagPrefix="uc3" %>
+<%@ Register Src="Inc/pinglun.ascx" TagName="pinglun" TagPrefix="uc2" %>
+<%@ Register Src="Inc/ArticleCunDang.ascx" TagName="ArticleCunDang" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>无标题页</title>
+     
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="GRBrainNET.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="text-align: center">
+    <form id="form1" runat="server">
+    <div style="text-align: center">
+        &nbsp;<br />
+        <table style="width: 90%; border-top: #000033 2px ridge;" cellpadding="0" cellspacing="0">
+            <tr>
+                <td style="width: 100%; text-align: right; height: 15px; " class ="blue">
+                    <div id="jnkc">
+</div>
+<script>setInterval("jnkc.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);
+</script>
+<script language="javascript" type="text/javascript" src="http://www.54kfqq.com/User/lhjsjbbs8837/jqqonline.html"></script>
+        </td>
+            </tr>
+            <tr>
+                <td class="blue" style="border-top: #330033 1px solid; width: 100%; line-height: 20px;
+                    height: 15px; text-align: right">
+                    <uc7:userlogin id="Userlogin1" runat="server">
+                    </uc7:userlogin></td>
+            </tr>
+            <tr>
+                <td style="width: 100%; font-weight: bold; font-size: 14px; color: #ffffff; height: 48px; background-color: #330033; text-align: left;">
+                    GRBrain.NET</td>
+            </tr>
+        </table>
+        <table   style="width: 90%; border-bottom: #330033 1px groove;" cellpadding="1" cellspacing="1" >
+            <tr>
+                <td rowspan="2" style="width: 90%; height: 21px; text-align: left; background-color: #330033;">
+                  <a href ="index.aspx" class ="blue" >网站首页</a> &nbsp;| &nbsp; <a href ="Article_List.aspx" class ="blue" >文章列表</a>&nbsp; |&nbsp; &nbsp;<a href ="guestbook/add_liuyan.aspx" class ="blue">留言反馈</a></td>
+            </tr>
+            <tr>
+            </tr>
+        </table>
+        <div style="text-align: center">
+            <table style="border-bottom-width: 1px; border-bottom-color: #330033;" cellpadding="0" cellspacing="0" width="90%">
+                <tr>
+                    <td style="width: 168px; height: 387px;" valign="top">
+                        <div style="text-align: left">
+                            <table style="width: 100%">
+                                <tr>
+                                    <td style="width: 100%; text-align: center; height: 14px;" class="tbx" rowspan="2" valign="top">
+                                        <div style="text-align: center">
+                                            <asp:Calendar ID="Calendar1" runat="server" Width="100%"></asp:Calendar>
+                                            </div>
+                                        </td>
+                                </tr>
+                                <tr>
+                                </tr>
+                            </table>
+                            <table style="width: 100%; text-align: center;">
+                                <tr>
+                                    <td class="btn" style="width: 100%; text-align: center">
+                                        随笔分类</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 100px; text-align: left;">
+                                        <asp:DataList ID="DataList1" runat="server" style="line-height: 20px" CssClass="blue" Font-Bold="False" Font-Italic="False" Font-Names="Arial Narrow" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" HorizontalAlign="Center" Width="125px">
+                                        <ItemTemplate ><li><a href ='Category.aspx?class_id=<%#Eval("class_id")%>' class ="black"><%#Eval("class_name")%></a></li></ItemTemplate>
+                                            <HeaderTemplate>
+                                               <li><a href ="index.aspx"  class ="black">首页</a></li> 
+                                            </HeaderTemplate>
+                                        </asp:DataList></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <table style="width: 100%; text-align: center;">
+                            <tr>
+                                <td class="btn " style="text-align: center;">
+                                    搜索</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 100%; height: 11px; text-align: left;" colspan="" valign="top">
+                                    <uc4:search ID="Search1" runat="server" />
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width: 100%; text-align: center;">
+                            <tr>
+                                <td class="btn " style="width: 100%; text-align: center;">
+                                    阅读排行榜</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 100%; height: 11px; text-align: left;" colspan="">
+                                    <uc5:paihangbang ID="Paihangbang1" runat="server" />
+                                </td>
+                            </tr>
+                        </table><table style="width: 100%; text-align: center;">
+                            <tr>
+                                <td class="btn " style="width: 100%; text-align: center;">
+                                    最新评论</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 200px; height: 11px; text-align: left;" colspan="">
+                                    <uc2:pinglun ID="Pinglun1" runat="server" />
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width: 100%; text-align: center;">
+                            <tr>
+                                <td style="width: 100%">
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td colspan="2" valign="top" style="height: 387px; border-left: gainsboro 1px solid;">
+                        <div style="text-align: center">
+                            &nbsp;</div>
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+                    </td>
+                </tr>
+            </table>
+            </div>
+    </div>
+        <uc3:bottom ID="Bottom1" runat="server" />
+    </form>
+</body>
+</html>
