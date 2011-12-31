@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="GRBrain.NET">
+</Property><Property Name="解决方案文件" Value="D:\动漫\网站\GRBrainBlog\GRBrain.NET.sln">
+</Property><Property Name="用户选项文件" Value="D:\动漫\网站\GRBrainBlog\GRBrain.NET.suo">
+</Property><Property Name="Date" Value="2011年12月27日">
+</Property><Property Name="Time" Value="13:03">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="GRBrain.NET.sln" Description="文件已成功备份为 D:\动漫\网站\GRBrainBlog\Backup\GRBrain.NET.sln">
+</Event><Event ErrorLevel="0" Project="" Source="GRBrain.NET.suo" Description="文件已成功备份为 D:\动漫\网站\GRBrainBlog\Backup\GRBrain.NET.suo">
+</Event><Event ErrorLevel="1" Project="GRBrainBlog" Source="..\GRBrainBlog" Description="警告: 正将项目文件备份到与原始解决方案相对路径不同的相对路径中。文件夹层次结构上的差异可能会导致在打开或生成备份的解决方案和项目时出现问题。">
+</Event><Event ErrorLevel="0" Project="" Source="GRBrain.NET.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="GRBrain.NET.sln" Description="Converted">
+</Event></UpgradeLog>

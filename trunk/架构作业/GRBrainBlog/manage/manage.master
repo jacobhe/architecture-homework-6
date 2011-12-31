@@ -1,0 +1,126 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="manage.master.cs" Inherits="manage_manage" %>
+<%@ Register Src="../Inc/bottom.ascx" TagName="bottom" TagPrefix="uc1" %>
+<%@ Register Src="../Inc/top.ascx" TagName="top" TagPrefix="uc2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>无标题页</title>
+    <link href="../GRBrainNET.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        &nbsp;<div style="text-align: center">
+            <table style="width: 90%; border-right: #3366ff 1px solid; border-top: #3366ff 1px solid; border-left: #3366ff 1px solid; border-bottom: #3366ff 1px solid;">
+                <tr>
+                    <td colspan="2" style="font-weight: bold; font-size: 30px; color: #ffffff; line-height: 40px; height: 83px; background-color: #3366ff">
+                        GRBrain.NET&nbsp; 后台管理</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: left">
+                        &nbsp; 欢迎<asp:Label ID="Label1" runat="server" Font-Bold="True" ForeColor="#FF8000"></asp:Label>
+                        登陆成功.<asp:Label
+                            ID="Label2" runat="server" Font-Bold="True" ForeColor="#FF8000"></asp:Label></td>
+                </tr>
+                <tr>
+                    <td style="width: 15%; text-align: center; background-color: #6699ff;" valign="top">
+                        <div style="text-align: center">
+                            <table style="width: 162px">
+                                <tr>
+                                    <td style="font-weight: bold; font-size: 13px; width: 100px; color: #ffffff; background-color: #3366ff; text-align: center;">
+                                        <a  href ="admin_index.aspx"  class ="black"></a>&nbsp;<asp:LinkButton ID="LinkButton1"
+                                            runat="server" ForeColor="White" PostBackUrl="~/manage/admin_index.aspx">后台首页</asp:LinkButton>
+                                        <asp:LinkButton ID="LinkButton3" runat="server" ForeColor="White" OnClick="LinkButton3_Click">注销</asp:LinkButton></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 100px; text-align: right">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table style="width: 162px">
+                                <tr>
+                                    <td style="font-weight: bold; font-size: 13px; width: 100px; color: #ffffff; background-color: #3366ff">
+                                        文章管理</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 100px; text-align: right" class="c">
+                                       <a href="../AddBlog_News.aspx" class ="c">添加文章</a>&nbsp;&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 100px; text-align: right">
+                                        <a href ="CK_Article.aspx" class="c" >删除文章</a>&nbsp;</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <table style="width: 162px">
+                            <tr>
+                                <td style="font-weight: bold; font-size: 13px; width: 100px; color: #ffffff; background-color: #3366ff">
+                                    用户管理</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 100%; text-align: center" class="c">
+                                    <a href ="CK_Users.aspx" class="c" >查看用户</a></td>
+                            </tr>
+                        </table>
+                        <table style="width: 162px">
+                            <tr>
+                                <td style="font-weight: bold; font-size: 13px; width: 100px; color: #ffffff; background-color: #3366ff">
+                                    留言管理</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 100px; text-align: right" class="c">
+                                    <a href ="CK_liuyan.aspx" class="c"  >查看所有留言</a></td>
+                            </tr>
+                        </table>
+                        <table style="width: 162px">
+                            <tr>
+                                <td style="font-weight: bold; font-size: 13px; width: 100px; color: #ffffff; background-color: #3366ff">
+                                    评论管理</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 100px; text-align: right">
+                                    <a href ="CK_pinglun.aspx"  class ="c">查看评论</a></td>
+                            </tr>
+                        </table>
+                        <table style="width: 162px">
+                            <tr>
+                                <td style="font-weight: bold; font-size: 13px; width: 100px; color: #ffffff; background-color: #3366ff; height: 17px;">
+                                    类别管理</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 100px; text-align: right">
+                                    <a href="CK_Class.aspx"  class ="c">查看类别</a>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 100px; text-align: right">
+                                    <a href ="Add_Class.aspx"  class ="c">添加类别</a>&nbsp;
+                                </td>
+                            </tr>
+                        </table><table style="width: 162px">
+                            <tr>
+                                <td style="font-weight: bold; font-size: 13px; width: 100px; color: #ffffff; background-color: #3366ff">
+                                    数据库操作</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 100px; text-align: right">
+                                    <a href ="backup.aspx" class="c">备份数据库</a>&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="width: 60%" valign="top">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-weight: bold; font-size: 13px; color: #ffffff; background-color: #3366ff">
+                        版权所有@GRBrain.NET</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

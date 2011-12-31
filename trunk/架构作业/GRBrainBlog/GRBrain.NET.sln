@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GRBrainBlog", ".", "{6DEF2156-1B9A-4B24-88F5-A8909BED6286}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/GRBrain.NET"
+		Debug.AspNetCompiler.PhysicalPath = "..\GRBrain.NET\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\GRBrain.NET\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/GRBrain.NET"
+		Release.AspNetCompiler.PhysicalPath = "..\GRBrain.NET\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\GRBrain.NET\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "8820"
+		VWDVirtualPath = "/"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DEF2156-1B9A-4B24-88F5-A8909BED6286}.Debug|.NET.ActiveCfg = Debug|.NET
+		{6DEF2156-1B9A-4B24-88F5-A8909BED6286}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

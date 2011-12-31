@@ -1,0 +1,46 @@
+﻿body 
+{
+    font-size :12px;
+}
+.btn {
+BORDER-RIGHT: #7b9ebd 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #7b9ebd 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#cecfde); BORDER-LEFT: #7b9ebd 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #7b9ebd 1px solid
+}
+
+A.black:link {FONT-SIZE: 12px;text-decoration: none;color: #201F1F;}
+A.black:visited {FONT-SIZE: 12px;COLOR: #201F1F;text-decoration: none;}
+A.black:hover {FONT-SIZE: 13px; COLOR: #D80000; TEXT-DECORATION: underline}
+
+A.blue:link {FONT-SIZE: 15px;text-decoration: none;color: #0099FF; font-weight :bold ;}
+A.blue:visited {FONT-SIZE: 15px;COLOR: #0099FF;text-decoration: none;font-weight :bold ;}
+A.blue:hover {FONT-SIZE: 15px; COLOR: #0099FF; TEXT-DECORATION: none;font-weight :bold ;} 
+a.discoun.link  {
+ font-family: sans-serif, "宋体";
+ font-size: 14px;
+ color: #6A6A6A;
+ text-decoration:none;
+}
+a.discoun:hover {
+ font-family: sans-serif, "宋体";
+ font-size: 14px;
+ color: #ee7316;
+ text-decoration:underline;
+}
+.tbx
+{
+    font-size :12px;
+    height :14px;
+    width :400px;
+}
+.logon
+{
+    font-size :12px;
+    height :12px;
+    width :100px;
+}
+A.b:link {FONT-SIZE: 12px;text-decoration: none;color: #201F1F;}
+A.b:visited {FONT-SIZE: 12px;COLOR: #201F1F;text-decoration: none;}
+A.b:hover {FONT-SIZE: 12px; COLOR: #D80000; TEXT-DECORATION: underline}
+
+A.c:link {FONT-SIZE: 12px;text-decoration: none;color:White ; font-weight :bold ;}
+A.c:visited {FONT-SIZE: 12px;COLOR: #201F1F;text-decoration: none;}
+A.c:hover {FONT-SIZE: 12px; COLOR: #D80000; TEXT-DECORATION: underline}

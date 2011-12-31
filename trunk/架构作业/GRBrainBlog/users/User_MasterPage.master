@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="User_MasterPage.master.cs" Inherits="users_User_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>无标题页</title>
+    <link href="../GRBrainNET.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        &nbsp;<div style="text-align: center">
+            <table style="width: 818px; height: 276px">
+                <tr>
+                    <td colspan="3" style="height: 62px; font-size: 20px; color: #ffffff; background-color: #6699ff;">
+                        用户个人中心</td>
+                </tr>
+                <tr>
+                    <td style="height: 211px ; width: 175px; background-color: #6699ff;" valign="top">
+                        <div style="text-align: center">
+                            <table style="width: 100%; height: 247px">
+                                <tr>
+                                    <td style="width: 100%; font-size: 13px; color: #ffffff;" valign="top">
+                                        <br />
+                                        欢迎
+                                        <asp:Label ID="Label1" runat="server" Font-Bold="True" ForeColor="Red"></asp:Label>
+                                        登陆成功<br />
+                                        <br />
+                                        <a href ="../index.aspx" class ="black">返回前台</a><br />
+                                        <br />
+                                        <a href ="user_modifyinfo.aspx"  class ="black">修改个人资料</a><br />
+                                        <br />
+                                        
+                                       
+                                       <a href ="user_addblog.aspx"  class ="black"> 添加博客文章</a><br />
+                                        <br />
+                                        <br />
+                                        <asp:Button ID="Button1" runat="server" CssClass="btn" OnClick="Button1_Click" Text="注销" /></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td colspan="2" style="height: 211px; text-align: left" valign="top">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="height: 54px; font-size: 15px; color: #ffffff; background-color: #6699ff;">
+                        程序设计@天亮说晚安</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

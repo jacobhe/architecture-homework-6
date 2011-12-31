@@ -1,0 +1,66 @@
+/*
+Style by 吕海鹏  , 2007-12-30
+*/
+
+/* 后台管理CSS定义*/
+/**{margin: 0; padding: 0; border: 0;} */
+
+body { font-family:"宋体",arial;margin:0; padding:0;border: 0; background: #FFF; font-size:12px; color:#000;}
+
+div,form,img,ul,ol,li,dl,dt,dd {margin: 0; padding: 0; border: 0;}
+/*h1,h2,h3,h4,h5,h6 { margin:0; padding:0;}*/
+table,td,tr,th{font-size:12px;}
+
+/* 链接颜色 */
+a:link {color: #1f3a87; text-decoration:none;}
+a:visited {color: #83006f;text-decoration:none;}
+a:hover {color: #bc2931; text-decoration:underline;}
+a:active {color: #bc2931;}
+/* 颜色属性 [定义规则，小写c加颜色名称] */
+
+/* 链接颜色 */
+a:link {color: #000; text-decoration:none;}
+a:visited {color:#333333;text-decoration:none;}
+a:hover {color: #ff0000; text-decoration:underline;}
+a:active {color: #bc2931;}
+/* 颜色属性 [定义规则，小写c加颜色名称] */
+.cRed,a.cRed:link,a.cRed:visited{ color:#ff0000; }
+.cDRed,a.cDRed:link,a.cDRed:visited{ color:#bc2931;}
+.cBlue,a.cBlue:link,a.cBlue:visited{color:#1f3a87;}
+.cGray,a.cGray:link,a.cGray:visited{ color: #4F544D;}
+.cDGray,a.cDGray:link,a.cDGray:visited{ color: #666;}
+.cWhite,a.cWhite:link,a.cWhite:visited{ color:#fff;}
+.cBlack,a.cBlack:link,a.cBlack:visited{color:#000;}
+a.cBlack:hover{color:#bc2931;}
+.cYellow,a.cYellow:link,a.cYellow:visited{color:#ff0;}
+.cGreen,a.cGreen:link,a.cGreen:visited{color:#008000;}
+/* 字体属性 [定义规则，小写f加属性名称] */
+.fB {font-weight: bold;}
+.fI {font-style: italic;}
+.fRed{ color:#FF0000}
+.fWhite{ color:#fff;}
+
+/* 字体大小*/
+.f12px{ font-size:12px;}
+.f14px{ font-size:14px;}
+
+/* 后台背景定义 */
+#bodyBg1{ background-image:url(../images/bg_right.jpg); }		/*大背景-登陆,后台右侧内容*/
+#bodyBg2{background-color:#3fa3ef;	color:#f2f2f2;	}			/**/
+#bodyBgTop{	background-image: url(../images/frame/top.jpg); }	/**/
+#bodyBg3{background-color:#ddf0fb;	}							/**/
+
+.Menu_Content{width:170px;}
+
+/* 表格样式 */
+.bgSouthidc{ background-image:url(../images/titlebg.gif); color:#000000;}
+.tableSouthidc{	border:1px solid #A4B6D7;}
+.tdSouthidc{BACKGROUND-COLOR:#F2F8FF;}
+.trSouthidc{BACKGROUND-COLOR:#ECF5FF; height:23px;}
+
+/* 无级分类树样式 */
+.class_kuai{margin:0 auto; padding:0; border:1px #999999 solid;width:700px; text-align:center; background-color:#fff;}
+.class_hang{ clear:both; height:21px;}
+.class_lie1{margin:0;  border:0; border-bottom:1px #999999 dashed;  width:500px; height:15px; padding-top:5px; float:left; display:block;text-align:left;}
+.class_lie2{margin:0;  border:0; border-bottom:1px #999999 dashed;  width:100px; height:15px; padding-top:5px; display:block;float:left; }
+.class_lie3{margin:0;  border:0; border-bottom:1px #999999 dashed;  width:95px; height:15px; padding-top:5px;display:block; float:left; }
