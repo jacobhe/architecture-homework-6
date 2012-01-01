@@ -23,13 +23,14 @@ public partial class Inc_Register : System.Web.UI.Page
         {
             string Username=TextBox1 .Text .Trim ();
             string Userpass=TextBox2 .Text .Trim ();
-            string usersex = DropDownList1.SelectedItem.Text.ToString();//51*aspx
+            string usersex = DropDownList1.SelectedItem.Text.ToString();
             string email=TextBox4 .Text .Trim ();
+            string question = DropDownList2.SelectedItem.Text.ToString();
             string answer=TextBox8 .Text .Trim ();
             string beizhu=TextBox7 .Text .Trim ();
             string riqi=TextBox5 .Text .Trim ();
             string dizhi=TextBox6 .Text .Trim ();
-            string sqlinsert = "insert into Users(UserName,UserPass,UserSex,UserEmail,Answer,UserBeizhu,UserBirthday,UserAddress) values('" + Username + "','" + Userpass + "','" + usersex + "','" + email + "','" + answer + "','" + beizhu + "','" + riqi + "','" + dizhi + "')";
+            string sqlinsert = "insert into Users(UserName,UserPass,UserSex,UserEmail,Question,Answer,UserBeizhu,UserBirthday,UserAddress) values('" + Username + "','" + Userpass + "','" + usersex + "','" + email + "','" + question + "','" + answer + "','" + beizhu + "','" + riqi + "','" + dizhi + "')";
             SqlCommand InsertCmd = new SqlCommand(sqlinsert, conn);
             conn.Open();
             InsertCmd.ExecuteNonQuery();
