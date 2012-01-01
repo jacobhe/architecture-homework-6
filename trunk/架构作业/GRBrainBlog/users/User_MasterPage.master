@@ -32,8 +32,10 @@
                                         <a href ="user_modifyinfo.aspx"  class ="black">修改个人资料</a><br />
                                         <br />
                                         
-                                       
+          
                                        <a href ="user_addblog.aspx"  class ="black"> 添加博客文章</a><br />
+                                       <br />
+                                       <a href ="graphUpload.aspx"  class ="black"> 上传照片</a><br />
                                         <br />
                                         <br />
                                         <asp:Button ID="Button1" runat="server" CssClass="btn" OnClick="Button1_Click" Text="注销" /></td>
