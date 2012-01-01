@@ -14,20 +14,23 @@ public partial class test : System.Web.UI.Page
     SqlConnection conn = SqlHelper.creation();
     protected void Page_Load(object sender, EventArgs e)
     {
-        string sqlstr = Convert.ToString(Request.Cookies["key"].ToString());
-        string sql = "select * from Users where Answer =" + sqlstr;
+        //string sqlstr = Convert.ToString(Request.Cookies["key"].ToString());
+        string sqlstr = Convert.ToString(Session["key"].ToString());
+        Session.Remove("key");
+        string sql = "select * from Users where Answer = '" + sqlstr +" ' ";
+        //Response.Write(sql);
         SqlCommand cmd = new SqlCommand(sql, conn);
         conn.Open();
         SqlDataReader dr = cmd.ExecuteReader();
         if (dr.Read())
         {
-            this.lbl_result.Text = dr["Answer"].ToString();
+            this.lbl_result.Text = dr["UserPass"].ToString();
             dr.Close();
             conn.Close();
         }
         else
         {
-            lbl_result.Text = "对不起，没有找到您的密码,请联系管理员！";
+            lbl_result.Text = "安全问题答案错误！";
         }
     }
 }

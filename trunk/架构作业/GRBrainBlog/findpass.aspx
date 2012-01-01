@@ -10,6 +10,19 @@
 <body>
     <form id="form1" runat="server">
     <div>
+        <br />
+        <br />
+        <asp:Label ID="Label2" runat="server" Text="请输入用户名："></asp:Label>
+        <asp:TextBox ID="TextBox2" runat="server" Width="189px"></asp:TextBox>
+&nbsp;<asp:Button ID="Button2" runat="server" CssClass="btn" onclick="Button2_Click" 
+            Text="确定" />
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="Label3" runat="server" Width="800px"></asp:Label>
+        <br />
+        <br />
+        <br />
         请输入安全问题答案：<asp:TextBox ID="TextBox1" runat="server" Width="261px"></asp:TextBox><br />
         <br />
         <asp:Button ID="Button1" runat="server" CssClass="btn" OnClick="Button1_Click" Text="提交" /><br />
