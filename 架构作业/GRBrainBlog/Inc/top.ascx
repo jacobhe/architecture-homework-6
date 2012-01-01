@@ -13,7 +13,7 @@
     <tr>
         <td style="font-weight: bold; font-size: 14px; width: 100%; color: #ffffff; height: 48px;
             background-color: #330033; text-align: left">
-            GRBrain.NET</td>
+            FuckBrain</td>
     </tr>
 </table>
 <table cellpadding="1" cellspacing="1" style="width: 90%; border-bottom: #330033 1px groove">

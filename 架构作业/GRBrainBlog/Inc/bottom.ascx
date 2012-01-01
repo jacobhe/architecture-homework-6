@@ -3,7 +3,7 @@
     border-bottom: #330033 1px groove; background-color: #330033; text-align: center">
     <tr>
         <td rowspan="2" style="width: 90%; height: 21px; text-align: center">
-            版权所有@GRBrain.NET(天亮说晚安QQ:516608612)Email:lhjsjbbs1741@yahoo.cn</td>
+            版权所有www.FuckSCUT.com  华南理工大学 软件学院</td>
     </tr>
     <tr>
     </tr>
