@@ -16,10 +16,10 @@ public partial class users_graphUpload : System.Web.UI.Page
     {
         //上传文件
         string msg;
-        if (true)//Session["username"] != null)
+        if (Session["UserLoginName"] != null)
         {
-            //string userName = Convert.ToString(Session["username"].ToString());
-            string userName = "rongrong";
+            string userName = Convert.ToString(Session["UserLoginName"].ToString());
+            //string userName = "rongrong";
            // Response.Write(userName);
             int result = Implement.UpLoad(FileUpload1, TextBox1.Text, TextBox2.Text, DropDownList1.SelectedValue, userName);
             if (result != 2)//如果出现错误，提示
