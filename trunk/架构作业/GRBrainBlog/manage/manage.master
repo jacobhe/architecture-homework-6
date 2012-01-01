@@ -38,16 +38,35 @@
                                     </td>
                                 </tr>
                             </table>
+                              <table style="width: 162px">
+                                <tr>
+                                    <td style="font-weight: bold; font-size: 13px; width: 100px; color: #ffffff; background-color: #3366ff">
+                                        文章管理</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 100px; text-align: right" class="c">
+                                       <a href="../AddBlog_News.aspx" class ="c">添加文章</a>&nbsp;&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 100px; text-align: right">
+                                        <a href ="CK_Article.aspx" class="c" >删除文章</a>&nbsp;</td>
+                                </tr>
+                            </table>
+                            </div>
                             <table style="width: 162px">
                                 <tr>
                                     <td style="font-weight: bold; font-size: 13px; width: 100px; color: #ffffff; background-color: #3366ff">
+                                  
+                               
+                                       &nbsp;&nbsp;
                                   
                                
                                        <a href="graph.aspx" class ="c">相册管理</a>&nbsp;&nbsp;</td>
                        
                                 </tr>
                             </table>
-                        </div>
+                        
+
                         <table style="width: 162px">
                             <tr>
                                 <td style="font-weight: bold; font-size: 13px; width: 100px; color: #ffffff; background-color: #3366ff">
@@ -110,7 +129,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-weight: bold; font-size: 13px; color: #ffffff; background-color: #3366ff">
-                        版权所有@GRBrain.NET</td>
+                        版权所有fuckSCUT</td>
                 </tr>
             </table>
         </div>
