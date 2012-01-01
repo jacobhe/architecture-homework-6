@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>GRBrain.NET后台管理</title>
+    <title>后台管理</title>
     <link href ="../GRBrainNET.css" type ="text/css" rel ="Stylesheet" />
 </head>
 <body>
@@ -16,7 +16,7 @@
                     <tr>
                         <td colspan="3" style="font-weight: bold; font-size: 30px; color: #ffffff; line-height: 20px;
                             letter-spacing: 2px; height: 53px; background-color: #6699ff">
-                            GRBrain.NET后台登陆</td>
+                           fuckSCUT后台登陆</td>
                     </tr>
                     <tr>
                         <td style="width: 272px; text-align: right;">
@@ -38,7 +38,7 @@
                     </tr>
                     <tr>
                         <td colspan="3" style="font-size: 15px; color: #ffffff; background-color: #6699ff">
-                            程序设计@天亮说晚安</td>
+                            版权所有fuckSCUT</td>
                     </tr>
                 </table>
             </div>
